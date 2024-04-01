@@ -1,0 +1,45 @@
+.upload-form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 28px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.file-input {
+    display: none;
+}
+
+.upload-button {
+    background: #271;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5; /* Opacity to make it appear faded */
+}
+
+.upload-button:disabled {
+    background: #dcdcdc; /* Change color when disabled */
+    cursor: not-allowed; /* change cursor style when disabled */
+}
+
+.upload-status {
+    margin-top: 20px;
+    font-weight: bold;
+}
