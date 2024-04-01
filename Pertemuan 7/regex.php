@@ -1,5 +1,5 @@
 <?php
-$pattern = '/go{1,3}d/'; // Cocokkan "god", "good", atau "gooood"
+$pattern = '/go{1,3}d/'; // berfungsi untuk mencocokkan "god", "good", atau "gooood"
 $text = 'god is good.';
 if (preg_match($pattern, $text, $matches)) {
     echo "Cocokkan: " . $matches[0];

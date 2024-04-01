@@ -4,6 +4,7 @@
     <title>Form Input PHP</title>
 </head>
 <body>
+    <!-- berfungsi untuk membuat formulir sederhana dengan dua input -->
     <h2>Form Input PHP</h2>
     <form method="post" action="proses_form.php">
         <label for="nama">Nama:</label>

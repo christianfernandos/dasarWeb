@@ -1,5 +1,5 @@
 <?php
-$umur = 20; // Assign umur dengan nilai 20
+$umur = 20; // berfungsi untuk Assign umur dengan nilai 20
 
 if (isset($umur) && $umur >= 18) {
     echo "Anda sudah dewasa.";

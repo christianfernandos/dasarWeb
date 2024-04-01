@@ -5,24 +5,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
     $errors = array();
     
-    // Validasi Nama
+    // berfungsi untuk memvalidasi nama
     if (empty($nama)) {
         $errors[] = "Nama harus diisi.";
     }
     
-    // Validasi Email
+    // berfungsi untuk mevalidasi email
     if (empty($email)) {
         $errors[] = "Email harus diisi.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Format email tidak valid.";
     }
     
-    // Validasi Password
+    // untuk mevalidasi password
     if (empty($password) || strlen($password) < 8) {
         $errors[] = "Password harus diisi dan minimal 8 karakter.";
     }
     
-    // Jika tidak ada error, proses data
+    // berfungsi untuk mengeksekusi , jika tidak error maka data terproses
     if (empty($errors)) {
         // Misalnya, menyimpan data ke database atau mengirim email
         echo "Data berhasil disimpan: Nama - $nama, Email - $email, Password - $password";

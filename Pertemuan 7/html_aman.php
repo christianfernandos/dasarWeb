@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Lanjutkan dengan pengolahan email yang aman
         echo "Email yang dimasukkan: $email";
     } else {
-        // Tangani input yang tidak valid
+        // berfungsi untuk menangani input yang tidak valid
         echo "Email tidak valid";
     }
 }

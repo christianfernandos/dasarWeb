@@ -22,13 +22,13 @@
 <script>
 $(document).ready(function() {
     $("#myForm").submit(function(event) {
-        event.preventDefault(); // Menghentikan pengiriman form secara default
+        event.preventDefault(); // berfungsi untuk menghentikan pengiriman form secara default
         
         var nama = $("#nama").val();
         var email = $("#email").val();
         var valid = true;
         
-        // Validasi nama
+        // untuk memvalidasi nama
         if (nama === "") {
             $("#nama-error").text("Nama harus diisi.");
             valid = false;
@@ -36,7 +36,7 @@ $(document).ready(function() {
             $("#nama-error").text("");
         }
         
-        // Validasi email
+        // untuk mevalidasi email
         if (email === '') {
             $("#email-error").text("Email harus diisi.");
             valid = false;
@@ -51,10 +51,10 @@ $(document).ready(function() {
                 type: "POST",
                 data: {nama: nama, email: email},
                 success: function(response) {
-                    $("#hasil").html(response); // Menampilkan pesan balasan dari server
+                    $("#hasil").html(response); // verfungsi untuk menampilkan pesan balasan dari server
                 },
                 error: function(xhr, status, error) {
-                    console.error(xhr.responseText); // Menampilkan pesan error jika terjadi kesalahan
+                    console.error(xhr.responseText); // berfungsi untuk meanmpilkan pesan error jika terjadi kesalahan
                 }
             });
         }

@@ -27,14 +27,14 @@
 <input type="submit" value="Submit">
 </form>
 <div id="hasil">
-<!-- Hasil akan ditampilkan di sini -->
+<!-- untuk menampilkan hasil -->
 </div>
 
 <script>
 $(document).ready(function () {
 $("#myForm").submit(function(e) {
-e.preventDefault(); // Mencegah pengiriman form secara default
-// Mengumpulkan data form
+e.preventDefault(); // berfungsi untuk mencegah pengiriman form secara default
+// berfungsi untuk mengumpulkan data form
 var formData = $("#myForm").serialize();
 // Kirim data ke server PHP
 $.ajax({
@@ -42,7 +42,7 @@ url: "proses_lanjut.php", // Ganti dengan nama file PHP yang sesuai
 type: "POST",
 data: formData,
 success: function (response) {
-// Tampilkan hasil dari server di div "hasil"
+// berfungsi untuk menampilkan  hasil dari server di div "hasil"
 $("#hasil").html(response);
 }
 });

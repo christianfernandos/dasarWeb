@@ -1,5 +1,5 @@
 <?php
-$myArray = array(); // Array kosong
+$myArray = array(); // wadah/array kosong
 
 if (empty($myArray)) {
     echo "Array tidak terdefinisi atau kosong.";

@@ -28,6 +28,7 @@
 </body>
 </html>
 <?php
+//berfungsi untuk melakukan pengecekan melalui metode POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $selectedBuah = $_POST['buah'];
     if (isset($_POST['warna'])) {

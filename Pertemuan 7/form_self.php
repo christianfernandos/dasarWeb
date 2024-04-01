@@ -6,11 +6,11 @@
 <body>
 <h2>Form Input PHP</h2>
 <?php
-// Inisialisasi variabel
+// untuk menginisialisasi
 $namaErr = "";
 $nama = "";
 
-// Cek apakah form sudah disubmit.
+// untuk mengecek apakah form sudah disubmit.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validasi nama (contoh: pastikan nama tidak kosong)
     if (empty($_POST["nama"])) {
